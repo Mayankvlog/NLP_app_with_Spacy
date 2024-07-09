@@ -1,0 +1,4 @@
+Pillow
+spacy
+spacy_streamlit
+streamlit
