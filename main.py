@@ -4,6 +4,10 @@ from PIL import Image
 import os
 import spacy  # Import the spacy library
 
+# Download the model if not already present
+import spacy.cli
+spacy.cli.download("en_core_web_sm")
+
 @st.cache_data
 def load_image(img):
     im = Image.open(img)
